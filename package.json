@@ -1,0 +1,45 @@
+{
+  "name": "disbursement-report",
+  "version": "1.0.0",
+  "description": "Disbursement Report",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "fix": "eslint --fix .",
+    "lint": "eslint .",
+    "precommit": "npm run lint",
+    "local": "DEBUG=my* DEBUG_ERRORS=true nodemon index.js",
+    "inspect": "NODE_ENV=development DEBUG=my* nodemon --inspect index.js",
+    "start": " node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harshitha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.5",
+    "csvtojson": "^2.0.10",
+    "debug": "^4.1.0",
+    "dotenv": "^6.2.0",
+    "esm": "^3.0.84",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.0",
+    "fs-extra": "^7.0.1",
+    "http-errors": "^1.7.1",
+    "json2csv": "^4.5.4",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.2",
+    "request": "^2.88.0",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1"
+  }
+}

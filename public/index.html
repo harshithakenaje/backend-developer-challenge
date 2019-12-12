@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Give India</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous">
+    <style>
+      * {
+        font-family: 'Roboto', sans-serif;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Disbursement Report</h1>
+      <form id="form">
+        <div class="form-group">
+          <label class="form-lable" for="baseCurrency">Base Currency: </label>
+          <input type="text" class="form-control" name="baseCurrency" placeholder="Base Currency" required>
+        </div>
+
+        <div class="form-group">
+          <label for="sample">File: </label>
+          <input type="file" name="sample" accept=".csv" class="form-control-file" required>
+        </div>
+
+        <button id="submitButton" type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </body>
+
+  <script type="module" src="/script.js"></script>
+</html>
